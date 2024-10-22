@@ -1,15 +1,26 @@
 
 package Clase;
 
-public class ServicioSolicitado extends Servicio {
+public class ServicioSolicitado {
     private String Nombre;
+    private String tipoServicio;
+    private String horaInicio;
+    private String horaTermino;
     private String CodigoServicio;
     private double Precio;
-    private String CodigoAmbiente;
-    
-    public ServicioSolicitado(){
-    
-    
+    private Ambiente ambiente;
+
+    public ServicioSolicitado() {
+    }
+
+    public ServicioSolicitado(String Nombre, String tipoServicio, String horaInicio, String horaTermino, String CodigoServicio, double Precio, Ambiente ambiente) {
+        this.Nombre = Nombre;
+        this.tipoServicio = tipoServicio;
+        this.horaInicio = horaInicio;
+        this.horaTermino = horaTermino;
+        this.CodigoServicio = CodigoServicio;
+        this.Precio = Precio;
+        this.ambiente = ambiente;
     }
 
     public String getNombre() {
@@ -18,6 +29,30 @@ public class ServicioSolicitado extends Servicio {
 
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
+    }
+
+    public String getTipoServicio() {
+        return tipoServicio;
+    }
+
+    public void setTipoServicio(String tipoServicio) {
+        this.tipoServicio = tipoServicio;
+    }
+
+    public String getHoraInicio() {
+        return horaInicio;
+    }
+
+    public void setHoraInicio(String horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    public String getHoraTermino() {
+        return horaTermino;
+    }
+
+    public void setHoraTermino(String horaTermino) {
+        this.horaTermino = horaTermino;
     }
 
     public String getCodigoServicio() {
@@ -36,22 +71,17 @@ public class ServicioSolicitado extends Servicio {
         this.Precio = Precio;
     }
 
-    public String getCodigoAmbiente() {
-        return CodigoAmbiente;
+    public Ambiente getAmbiente() {
+        return ambiente;
     }
 
-    public void setCodigoAmbiente(String CodigoAmbiente) {
-        this.CodigoAmbiente = CodigoAmbiente;
-    }
-
-    public ServicioSolicitado(String Nombre, String CodigoServicio, double Precio, String CodigoAmbiente) {
-        this.Nombre = Nombre;
-        this.CodigoServicio = CodigoServicio;
-        this.Precio = Precio;
-        this.CodigoAmbiente = CodigoAmbiente;
+    public void setAmbiente(Ambiente ambiente) {
+        this.ambiente = ambiente;
     }
     
     
+  
+
             
     
     
