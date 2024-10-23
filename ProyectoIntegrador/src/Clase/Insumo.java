@@ -7,28 +7,39 @@ public class Insumo {
 private String nombre;
     private double cantidad;
     private String fechavencimiento;
-    private FechaVencimiento fvo;
+    //private FechaVencimiento fvo= new FechaVencimiento();
+   private double precio;
+    private String Categoria;
+  private String codigo;
+    private Date fecha2;
+    //private SimpleDateFormat FormatoFV = new SimpleDateFormat("dd/MM/yyyy");
+     //private SimpleDateFormat dia = new SimpleDateFormat("dd");
+       // private SimpleDateFormat mes = new SimpleDateFormat("mm");
+       // private SimpleDateFormat año = new SimpleDateFormat("yyyy");
+     //   Date partesFechaDia = fvo.getDia();
+       // Date partesFechaMes = fvo.getMes();
+        //Date partesFechaAño= fvo.getAño();
 
-
-    public Insumo(String nombre, double cantidad, FechaVencimiento fvo, double precio, String Categoria, String codigo) {
+    public Insumo(String nombre, double cantidad, Date fecha2,double precio, String Categoria, String codigo) {
         this.nombre = nombre;
         this.cantidad = cantidad;
-        this.fvo = fvo;
+        this.fecha2= fecha2;
+        //this.fvo = fvo;
         this.precio = precio;
         this.Categoria = Categoria;
         this.codigo = codigo;
     }
 
     
-    public FechaVencimiento getFvo() {
+   /* public FechaVencimiento getFvo() {
         return fvo;
     }
 
     public void setFvo(FechaVencimiento fvo) {
         this.fvo = fvo;
-    }
+    }*/
 
-    public SimpleDateFormat getDia() {
+    /*public SimpleDateFormat getDia() {
         return dia;
     }
 
@@ -67,17 +78,7 @@ private String nombre;
     public void setPartesFechaMes(Date partesFechaMes) {
         this.partesFechaMes = partesFechaMes;
     }
-    private double precio;
-    private String Categoria;
-  private String codigo;
-    private Date fecha2;
-    private SimpleDateFormat FormatoFV = new SimpleDateFormat("dd/MM/yyyy");
-     private SimpleDateFormat dia = new SimpleDateFormat("dd");
-        private SimpleDateFormat mes = new SimpleDateFormat("mm");
-        private SimpleDateFormat año = new SimpleDateFormat("yyyy");
-        Date partesFechaDia = fvo.getDia();
-        Date partesFechaMes = fvo.getMes();
-        Date partesFechaAño= fvo.getAño();
+ 
         
         
         

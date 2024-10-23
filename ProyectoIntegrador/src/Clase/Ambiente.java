@@ -10,7 +10,7 @@ public class Ambiente {
     private boolean Reservado;
     private String CodigodeAmbiente;
     private String tipodeAmbiente;
-    private Object HorariodeReserva;
+    private String[] HorariodeReserva;
 
     public boolean isReservado() {
         return Reservado;
@@ -36,15 +36,15 @@ public class Ambiente {
         this.tipodeAmbiente = tipodeAmbiente;
     }
 
-    public Object getHorariodeReserva() {
+    public String[] getHorariodeReserva() {
         return HorariodeReserva;
     }
 
-    public void setHorariodeReserva(Object HorariodeReserva) {
+    public void setHorariodeReserva(String[] HorariodeReserva) {
         this.HorariodeReserva = HorariodeReserva;
     }
 
-    public Ambiente(boolean Reservado, String CodigodeAmbiente, String tipodeAmbiente, Object HorariodeReserva) {
+    public Ambiente(boolean Reservado, String CodigodeAmbiente, String tipodeAmbiente, String[] HorariodeReserva) {
         this.Reservado = Reservado;
         this.CodigodeAmbiente = CodigodeAmbiente;
         this.tipodeAmbiente = tipodeAmbiente;
