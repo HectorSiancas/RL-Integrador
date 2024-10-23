@@ -278,6 +278,7 @@ public class frmInventarioRegistro extends javax.swing.JFrame {
            fecha= txtFechaVencimiento.getText();
         
           tabla[0]=insumo.getCodigo();
+          
        tabla[1]=insumo.getNombre();
        tabla[2]=insumo.getCategoria();
        tabla[3]=insumo.getFechavencimiento();
