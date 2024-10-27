@@ -11,7 +11,7 @@ import MVC.Controlador;
 import java.text.SimpleDateFormat;
 import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
-import Clase.FechaVencimiento;
+//import Clase.FechaVencimiento;
 /**
  *
  * @author Hector

@@ -3,68 +3,56 @@ package Clase;
 import java.util.Date;
 
 public class Terapeuta extends Persona {
-    private String NombreTerapeuta;
-    private String ApellidosTerapeuta;
-    private String SexoTerapeuta;
-    private Date FechaNacimientoTerapeuta;
-    private Object HorarioSemanalLaboral;
     
+    private String[][] HorarioSemanalLaboral;
+    
+
     public Terapeuta(){
     
     
     }
 
-    public String getNombreTerapeuta() {
-        return NombreTerapeuta;
+    public Terapeuta(String[][] HorarioSemanalLaboral)
+    {
+        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
 
-    public void setNombreTerapeuta(String NombreTerapeuta) {
-        this.NombreTerapeuta = NombreTerapeuta;
+    public Terapeuta(String[][] HorarioSemanalLaboral, String nombre, String sexo, String fechaNacimiento, int DNI, int NumeroCelular)
+    {
+        super(nombre, sexo, fechaNacimiento, DNI, NumeroCelular);
+        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
 
-    public String getApellidosTerapeuta() {
-        return ApellidosTerapeuta;
+    public Terapeuta(String[][] HorarioSemanalLaboral, String Nombre)
+    {
+        super(Nombre);
+        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
 
-    public void setApellidosTerapeuta(String ApellidosTerapeuta) {
-        this.ApellidosTerapeuta = ApellidosTerapeuta;
+    public Terapeuta(String[][] HorarioSemanalLaboral, String sexo, String fehaNacimiento)
+    {
+        super(sexo, fehaNacimiento);
+        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
 
-    public String getSexoTerapeuta() {
-        return SexoTerapeuta;
+    public Terapeuta(String[][] HorarioSemanalLaboral, int DNI, int NumeroCelular)
+    {
+        super(DNI, NumeroCelular);
+        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
+    
 
-    public void setSexoTerapeuta(String SexoTerapeuta) {
-        this.SexoTerapeuta = SexoTerapeuta;
-    }
-
-    public Date getFechaNacimientoTerapeuta() {
-        return FechaNacimientoTerapeuta;
-    }
-
-    public void setFechaNacimientoTerapeuta(Date FechaNacimientoTerapeuta) {
-        this.FechaNacimientoTerapeuta = FechaNacimientoTerapeuta;
-    }
-
-    public Object getHorarioSemanalLaboral() {
+    public String[][] getHorarioSemanalLaboral()
+    {
         return HorarioSemanalLaboral;
     }
 
-    public void setHorarioSemanalLaboral(Object HorarioSemanalLaboral) {
+    public void setHorarioSemanalLaboral(String[][] HorarioSemanalLaboral)
+    {
         this.HorarioSemanalLaboral = HorarioSemanalLaboral;
     }
-
-    public Terapeuta(String NombreTerapeuta, String ApellidosTerapeuta, String SexoTerapeuta, Date FechaNacimientoTerapeuta, Object HorarioSemanalLaboral) {
-        this.NombreTerapeuta = NombreTerapeuta;
-        this.ApellidosTerapeuta = ApellidosTerapeuta;
-        this.SexoTerapeuta = SexoTerapeuta;
-        this.FechaNacimientoTerapeuta = FechaNacimientoTerapeuta;
-        this.HorarioSemanalLaboral = HorarioSemanalLaboral;
+    public void Atender_a_cliente(){
+    
     }
-
-    
-    
-    
-    
     
 }

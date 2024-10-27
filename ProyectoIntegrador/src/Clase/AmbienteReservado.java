@@ -1,21 +1,32 @@
 
 package Clase;
 
-public class Ambiente {
+public class AmbienteReservado {
 
-    public Ambiente(){
+    public AmbienteReservado(){
         
         
     }
-    private boolean Reservado;
-    private String CodigodeAmbiente;
+    //private boolean Reservado;
+    private String NombreAmbiente;
     private String tipodeAmbiente;
     private String[] HorariodeReserva;
 
-    public boolean isReservado() {
+   /* public boolean isReservado() {
         return Reservado;
-    }
+    }*/
 
+    public AmbienteReservado(String NombreAmbiente, String tipodeAmbiente, String[] HorariodeReserva)
+    {
+        this.NombreAmbiente = NombreAmbiente;
+        this.tipodeAmbiente = tipodeAmbiente;
+        this.HorariodeReserva = HorariodeReserva;
+    }
+    
+    
+    
+    
+    /*
     public void setReservado(boolean Reservado) {
         this.Reservado = Reservado;
     }
@@ -50,6 +61,36 @@ public class Ambiente {
         this.tipodeAmbiente = tipodeAmbiente;
         this.HorariodeReserva = HorariodeReserva;
     }
-    
-    
+    */
+
+    public String getNombreAmbiente()
+    {
+        return NombreAmbiente;
+    }
+
+    public void setNombreAmbiente(String NombreAmbiente)
+    {
+        this.NombreAmbiente = NombreAmbiente;
+    }
+
+    public String getTipodeAmbiente()
+    {
+        return tipodeAmbiente;
+    }
+
+    public void setTipodeAmbiente(String tipodeAmbiente)
+    {
+        this.tipodeAmbiente = tipodeAmbiente;
+    }
+/*
+    public String[] getHorariodeReserva()
+    {
+        return HorariodeReserva;
+    }
+
+    public void setHorariodeReserva(String[] HorariodeReserva)
+    {
+        this.HorariodeReserva = HorariodeReserva;
+    }
+  */  
 }

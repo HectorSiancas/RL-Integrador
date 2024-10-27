@@ -1,6 +1,8 @@
 
 package Clase;
 
+import java.util.ArrayList;
+
 public class ServicioSolicitado {
     private String Nombre;
     private String tipoServicio;
@@ -8,12 +10,39 @@ public class ServicioSolicitado {
     private String horaTermino;
     private String CodigoServicio;
     private double Precio;
-    private Ambiente ambiente;
+    private AmbienteReservado ambiente;
+    private Terapeuta terapeuta;
 
+    public Terapeuta getTerapeuta()
+    {
+        return terapeuta;
+    }
+
+    public void setTerapeuta(Terapeuta terapeuta)
+    {
+        this.terapeuta = terapeuta;
+    }
+
+    public ServicioSolicitado(String Nombre, String tipoServicio, String horaInicio, String horaTermino, String CodigoServicio, double Precio, AmbienteReservado ambiente, Terapeuta terapeuta)
+    {
+        this.Nombre = Nombre;
+        this.tipoServicio = tipoServicio;
+        this.horaInicio = horaInicio;
+        this.horaTermino = horaTermino;
+        this.CodigoServicio = CodigoServicio;
+        this.Precio = Precio;
+        this.ambiente = ambiente;
+        this.terapeuta = terapeuta;
+    }
+    
+    
+    
+    
+    
     public ServicioSolicitado() {
     }
 
-    public ServicioSolicitado(String Nombre, String tipoServicio, String horaInicio, String horaTermino, String CodigoServicio, double Precio, Ambiente ambiente) {
+    public ServicioSolicitado(String Nombre, String tipoServicio, String horaInicio, String horaTermino, String CodigoServicio, double Precio, AmbienteReservado ambiente) {
         this.Nombre = Nombre;
         this.tipoServicio = tipoServicio;
         this.horaInicio = horaInicio;
@@ -71,11 +100,11 @@ public class ServicioSolicitado {
         this.Precio = Precio;
     }
 
-    public Ambiente getAmbiente() {
+    public AmbienteReservado getAmbiente() {
         return ambiente;
     }
 
-    public void setAmbiente(Ambiente ambiente) {
+    public void setAmbiente(AmbienteReservado ambiente) {
         this.ambiente = ambiente;
     }
     

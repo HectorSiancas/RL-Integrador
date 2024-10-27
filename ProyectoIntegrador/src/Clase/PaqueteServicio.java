@@ -7,13 +7,14 @@ public class PaqueteServicio {
     private String codigoPaquete;
     private int cantidadServicios;
     private Cliente cliente;       
-    private ArrayList<Servicio> servicios;
+    private ArrayList<ServicioSolicitado> servicios;
     
     public PaqueteServicio(){
     
     }
 
-    public PaqueteServicio(String codigoPaquete, int cantidadServicios, Cliente cliente, ArrayList<Servicio> servicios) {
+    
+    public PaqueteServicio(String codigoPaquete, int cantidadServicios, Cliente cliente, ArrayList<ServicioSolicitado> servicios) {
         this.codigoPaquete = codigoPaquete;
         this.cantidadServicios = cantidadServicios;
         this.cliente = cliente;
@@ -44,11 +45,11 @@ public class PaqueteServicio {
         this.cliente = cliente;
     }
 
-    public ArrayList<Servicio> getServicios() {
+    public ArrayList<ServicioSolicitado> getServicios() {
         return servicios;
     }
 
-    public void setServicios(ArrayList<Servicio> servicios) {
+    public void setServicios(ArrayList<ServicioSolicitado> servicios) {
         this.servicios = servicios;
     }
     

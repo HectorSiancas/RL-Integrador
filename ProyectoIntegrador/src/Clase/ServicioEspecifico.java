@@ -1,11 +1,35 @@
 
 package Clase;
 
+import java.util.ArrayList;
 
-public class ServicioEspecifico extends Servicio{
+
+public class ServicioEspecifico{
     private String Nombre;
     private String tipoServicio;
     private Double precio;
+    
+    private ArrayList<Insumo_Usado> insumo_usado;
+
+    public ArrayList<Insumo_Usado> getInsumo_usado()
+    {
+        return insumo_usado;
+    }
+
+    public void setInsumo_usado(ArrayList<Insumo_Usado> insumo_usado)
+    {
+        this.insumo_usado = insumo_usado;
+    }
+
+    public ServicioEspecifico(String Nombre, String tipoServicio, Double precio, ArrayList<Insumo_Usado> insumo_usado)
+    {
+        this.Nombre = Nombre;
+        this.tipoServicio = tipoServicio;
+        this.precio = precio;
+        this.insumo_usado = insumo_usado;
+    }
+    
+    
     
     public ServicioEspecifico(){
     
@@ -42,7 +66,7 @@ public class ServicioEspecifico extends Servicio{
     }
 
     public ServicioEspecifico(String Nombre, String tipoServicio, Double precio, String Servicio) {
-        super(Servicio);
+        
         this.Nombre = Nombre;
         this.tipoServicio = tipoServicio;
         this.precio = precio;
